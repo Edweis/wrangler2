@@ -2,7 +2,7 @@ import * as fs from "node:fs";
 import { builtinModules } from "node:module";
 import * as path from "node:path";
 import NodeGlobalsPolyfills from "@esbuild-plugins/node-globals-polyfill";
-import NodeModulesPolyfills from "@esbuild-plugins/node-modules-polyfill";
+import {polyfillNode} from "esbuild-plugin-polyfill-node";
 import * as esbuild from "esbuild";
 import tmp from "tmp-promise";
 import createModuleCollector from "../module-collection";
